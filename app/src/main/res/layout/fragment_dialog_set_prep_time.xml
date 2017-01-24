@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/button_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_padding_small"
+        android:text="@string/pickup_in"
+        android:textColor="#ff696969"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_item_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_padding_small"
+        android:layout_marginRight="@dimen/item_padding_small">
+
+        <ImageView
+            android:id="@+id/fragment_prep_time_sub_time"
+            android:layout_width="@dimen/quantity_icon_size"
+            android:layout_height="@dimen/quantity_icon_size"
+            android:layout_margin="8.0dip"
+            android:src="@drawable/quantity_remove"/>
+
+        <TextView
+            android:id="@+id/fragment_prep_time_remaining"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:fontFamily="@string/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/in_some_min"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <ImageView
+            android:id="@+id/fragment_prep_time_add_time"
+            android:layout_width="@dimen/quantity_icon_size"
+            android:layout_height="@dimen/quantity_icon_size"
+            android:layout_margin="8.0dip"
+            android:src="@drawable/quantity_add"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_prep_time_estimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:45 PM, Today"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_margin">
+
+        <TextView
+            android:id="@+id/fragment_prep_time_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_padding_extra_small"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:paddingBottom="@dimen/prep_time_confirm_button_padding_top"
+            android:paddingLeft="@dimen/prep_time_confirm_button_padding_left"
+            android:paddingRight="@dimen/prep_time_confirm_button_padding_left"
+            android:paddingTop="@dimen/prep_time_confirm_button_padding_top"
+            android:text="@string/cancel"
+            android:textColor="@color/dd_red"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_padding_extra_small"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingBottom="@dimen/prep_time_confirm_button_padding_top"
+            android:paddingLeft="@dimen/prep_time_confirm_button_padding_left"
+            android:paddingRight="@dimen/prep_time_confirm_button_padding_left"
+            android:paddingTop="@dimen/prep_time_confirm_button_padding_top"
+            android:text="@string/confirm_pickup_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+</LinearLayout>

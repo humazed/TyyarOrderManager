@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frag_detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/detail_item_small_margin">
+
+        <TextView
+            android:id="@+id/frag_detail_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/roboto_medium"
+            android:text="Order #8002"
+            android:textColor="@color/dd_black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <TextView
+            android:id="@+id/frag_detail_item_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_weight="1.0"
+            android:text="4 items"
+            android:textColor="#801a1a1a"
+            android:textSize="@dimen/text_size_small"/>
+
+        <LinearLayout
+            android:id="@+id/frag_detail_contact_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer"
+                android:textColor="#801a1a1a"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <TextView
+                android:id="@+id/frag_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:text="Jimmy M"
+                android:textColor="@color/dd_orange"
+                android:textSize="@dimen/text_size_small"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/frag_detail_layout_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_padding_small">
+
+            <TextView
+                android:id="@+id/frag_detail_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.75"
+                android:text="@string/pickup_in"
+                android:textColor="#801a1a1a"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <TextView
+                android:id="@+id/frag_detail_pickup_mins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_detail_pickup"
+                android:layout_marginTop="5.0dip"
+                android:text="24 mins"
+                android:textColor="@color/dd_orange"
+                android:textSize="@dimen/text_size_small"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/frag_detail_header_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/item_padding_extra_small"
+            android:src="@drawable/ic_more"/>
+    </LinearLayout>

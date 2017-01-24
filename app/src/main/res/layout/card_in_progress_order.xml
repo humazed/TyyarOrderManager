@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/act_new_order_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="30.0dip"
+        android:paddingTop="30.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/act_new_order_new"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/delivery_list_padding_left">
+
+            <TextView
+                android:id="@+id/act_new_order_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Arthur Riley"
+                android:textColor="#de000000"
+                android:textSize="@dimen/delivery_list_item_text_size_large"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/act_new_order_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Schedule for Pickup @11:20am"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/delivery_list_item_text_size_medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
