@@ -6,6 +6,10 @@
 
     <color name="order_card_green">#fff0ffe8</color>
 
+    <!--for the touch touch_bg.xml-->
+    <color name="item_bg">#FFFFFF</color>
+    <color name="gray_color">#4b4b58</color>
+
     <color name="attachment_icon_pdf">#ff2196f3</color>
     <color name="attachment_icon_ppt">#fff9ce1d</color>
     <color name="attachment_icon_txt">#fff44336</color>

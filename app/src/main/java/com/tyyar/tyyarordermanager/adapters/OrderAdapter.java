@@ -1,6 +1,5 @@
 package com.tyyar.tyyarordermanager.adapters;
 
-import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -9,11 +8,10 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import com.tyyar.tyyarordermanager.R;
 import com.tyyar.tyyarordermanager.model.Order;
 
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-import static com.tyyar.tyyarordermanager.model.OrderStatus.COMPLECTED;
-import static com.tyyar.tyyarordermanager.model.OrderStatus.IN_PROGRESS;
 
 public class OrderAdapter extends BaseSectionQuickAdapter<OrderSection, BaseViewHolder> {
     private static final String TAG = OrderAdapter.class.getSimpleName();
@@ -25,8 +23,8 @@ public class OrderAdapter extends BaseSectionQuickAdapter<OrderSection, BaseView
     @BindView(R.id.pickup_time_textView) TextView mPickupTimeTextView;
     @BindView(R.id.row_container) RelativeLayout mRowContainer;
 
-    public OrderAdapter() {
-        super(R.layout.row_new_order, R.layout.header_delivery_list, DataServer.getSampleWithSection());
+    public OrderAdapter(List<OrderSection> orderSections) {
+        super(R.layout.row_new_order, R.layout.header_delivery_list, orderSections);
     }
 
     @Override
@@ -38,13 +36,13 @@ public class OrderAdapter extends BaseSectionQuickAdapter<OrderSection, BaseView
         mOrderItemsCountTextView.setText(mContext.getString(R.string.order_items_count, order.items().size()));
         mPickupTimeTextView.setText(mContext.getString(R.string.order_pickup_time, order.pickUpTime()));
 
-        if (order.orderStatus() == IN_PROGRESS || order.orderStatus() == COMPLECTED) {
-            mNewOrderButton.setVisibility(View.GONE);
-            mRowContainer.setBackgroundColor(mContext.getResources().getColor(R.color.white));
-        } else {
-            mNewOrderButton.setVisibility(View.VISIBLE);
-            mRowContainer.setBackgroundColor(mContext.getResources().getColor(R.color.order_card_green));
-        }
+//        if (order.orderStatus() == IN_PROGRESS || order.orderStatus() == COMPLECTED) {
+//            mNewOrderButton.setVisibility(View.GONE);
+//            mRowContainer.setBackgroundColor(mContext.getResources().getColor(R.color.white));
+//        } else {
+//            mNewOrderButton.setVisibility(View.VISIBLE);
+//            mRowContainer.setBackgroundColor(mContext.getResources().getColor(R.color.order_card_green));
+//        }
 
     }
 

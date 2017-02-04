@@ -5,10 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.tyyar.tyyarordermanager.R;
+import com.tyyar.tyyarordermanager.adapters.DataServer;
 import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
+import com.tyyar.tyyarordermanager.adapters.OrderSection;
+import com.tyyar.tyyarordermanager.utils.DataUtils;
 import com.tyyar.tyyarordermanager.utils.UiUtils;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,9 +38,17 @@ public class MainActivity extends AppCompatActivity {
         UiUtils.showDrawer(this, mToolbar).setSelection(1, false);
 
         mOrdersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        OrderAdapter adapter = new OrderAdapter();
-
+        List<OrderSection> sectionsList = DataUtils.getSectionsList(DataServer.getOrders());
+        OrderAdapter adapter = new OrderAdapter(sectionsList);
         mOrdersRecyclerView.setAdapter(adapter);
+
+        mOrdersRecyclerView.addOnItemTouchListener(new OnItemClickListener() {
+            @Override
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
+                Log.d(TAG, "onSimpleItemClick " + sectionsList.get(position).getOrder());
+            }
+        });
+
 
     }
 
