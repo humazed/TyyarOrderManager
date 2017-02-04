@@ -2,12 +2,18 @@
     <string name="app_name">Tyyar Order Manager</string>
     <string name="title_activity_order_details">Order Details</string>
 
+
+    <string name="order_number">#%d</string>
+    <string name="order_items_count">%d Items</string>
+    <string name="order_pickup_time">Pickup at %s</string>
+
+    <string name="in_some_min">%d minutes</string>
     <string name="date_time">%1$s, %2$s</string>
+    <string name="relative_time">%1$s, %2$s</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="preposition_for_date">on %s</string>
     <string name="preposition_for_time">at %s</string>
-    <string name="relative_time">%1$s, %2$s</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="attachment_download_failed_message">Failed to download. Tap to retry.</string>
     <string name="attachment_open_error_message">"Can't open attachment."</string>
@@ -179,7 +185,7 @@
     <string name="delivery_estimated_pickup_relative_date_string">, In %1$s days</string>
     <string name="delivery_estimated_pickup_relative_date_string_today">, Today</string>
     <string name="delivery_estimated_pickup_relative_date_string_tomorrow">, Tomorrow</string>
-    <string name="delivery_estimated_pickup_string">Pickup at %1$s%2$s</string>
+    <string name="delivery_estimated_pickup_string">c %1$s%2$s</string>
     <string name="delivery_footer_subtotal">Subtotal: %1$s</string>
     <string name="delivery_footer_support">"Issues or Questions?
 Call DoorDash (%1$s)"</string>
@@ -292,7 +298,6 @@ If same errors occurred even power cycled, the printer may out of order."</strin
     <string name="handlingmsg_warn_receipt_near_end">"Roll paper is nearly end.
 "</string>
     <string name="in_progress">In Progress</string>
-    <string name="in_some_min">%d minutes</string>
     <string name="inactive">inactive</string>
     <string name="inactive_forever">until reactivated manually</string>
     <string name="inactive_forever_space">   Forever ( I no longer carry this item)</string>

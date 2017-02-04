@@ -2,5 +2,4 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/grey_circle" android:state_activated="false"/>
-    <item android:drawable="@drawable/dark_circle" android:state_activated="true"/>
 </selector>

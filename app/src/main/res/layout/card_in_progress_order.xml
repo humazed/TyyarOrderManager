@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/act_new_order_new"
+            android:layout_toLeftOf="@+id/new_order_button"
             android:gravity="center_vertical"
             android:orientation="vertical"
             android:paddingLeft="@dimen/delivery_list_padding_left">
