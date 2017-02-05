@@ -9,6 +9,8 @@
     <!--MainActivity end-->
 
     <!--OrderDetailsActivity start-->
+    <string name="order_number_customer_name">#%1$d    %2$s</string>
+    <string name="items_count_pickup_time">%1$d Items • Pickup at %2$s \t</string>
     <!--OrderDetailsActivity end-->
 
     <!--commons start-->

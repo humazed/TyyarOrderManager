@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
@@ -22,10 +23,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class OrderDetailsActivity extends AppCompatActivity {
+    private static final String TAG = OrderDetailsActivity.class.getSimpleName();
 
     @BindView(R.id.toolbar) Toolbar mToolbar;
     @BindView(R.id.accept_order_button) LinearLayout mAcceptOrderButton;
     @BindView(R.id.items_recyclerView) RecyclerView mItemsRecyclerView;
+    @BindView(R.id.order_number_customer_name_textView) TextView mOrderNumberCustomerNameTextView;
+    @BindView(R.id.items_count_pickup_time_textView) TextView mItemsCountPickupTimeTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,11 @@ public class OrderDetailsActivity extends AppCompatActivity {
         }
 
         Order order = getIntent().getParcelableExtra(MainActivity.KEY_ORDER);
+
+        mOrderNumberCustomerNameTextView.setText(String.format(getString(R.string.order_number_customer_name)
+                , order.orderNumber(), order.customerName()));
+        mItemsCountPickupTimeTextView.setText(String.format(getString(R.string.items_count_pickup_time)
+                , order.items().size(), order.pickUpTime()));
 
         mItemsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mItemsRecyclerView.setAdapter(new OrderDetailsAdapter(order.items()));

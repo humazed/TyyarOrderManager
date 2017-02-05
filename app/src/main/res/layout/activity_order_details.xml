@@ -2,16 +2,15 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/order_details_app_bar_height"
+        android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,19 +25,24 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
             <TextView
+                android:id="@+id/order_number_customer_name_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="line 1"
-                android:textSize="30sp"/>
+                android:paddingLeft="40dp"
+                android:textSize="30sp"
+                tools:text="line 1"/>
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
+                android:id="@+id/items_count_pickup_time_textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="line 2"
-                android:textSize="18sp"/>
+                android:layout_marginBottom="20dp"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:paddingLeft="40dp"
+                android:textSize="24sp"
+                tools:text="line 2"/>
         </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
@@ -62,10 +66,9 @@
         android:clickable="true"
         android:enabled="false"
         android:orientation="vertical"
-        android:padding="12.0dip">
+        android:padding="12dp">
 
         <TextView
-            android:id="@+id/frag_detail_btn_prepare_header"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@string/roboto_medium"

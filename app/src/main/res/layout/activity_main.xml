@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,88 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orders_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-<!--
-            <TextView
-                android:id="@+id/new_order_textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                android:text="New Orders"
-                android:textSize="16sp"/>
--->
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                layout="@layout/header_delivery_list"/>
-
-            <LinearLayout
-                android:id="@+id/new_order_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <include
-                    layout="@layout/row_new_order"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <include
-                    layout="@layout/row_new_order"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-
-            <TextView
-                android:id="@+id/in_progress_textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="In Progress"
-                android:textSize="16sp"/>
-
-            <LinearLayout
-                android:id="@+id/in_progress_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <include
-                    layout="@layout/card_in_progress_order"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <include
-                    layout="@layout/card_in_progress_order"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/compleate_textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Complete"
-                android:textSize="16sp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginBottom="50dp"
-                android:background="#FFFFFF"
-                android:orientation="vertical">
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"/>
 </LinearLayout>
