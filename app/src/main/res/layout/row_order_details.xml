@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical">
+
+    <!--order_name-->
+    <LinearLayout
+        android:id="@+id/order_name_container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/detail_item_top_padding">
+
+        <TextView
+            android:id="@+id/item_category_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_padding_small"
+            android:fontFamily="@string/roboto_medium"
+            android:text="make your own pizza"
+            android:textAllCaps="true"
+            android:textColor="@color/color_text_grey"
+            android:textSize="@dimen/detail_item_text_extra_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_quantity_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_padding_small"
+                android:background="@drawable/button_black"
+                android:padding="4dp"
+                android:text="1x"
+                android:textColor="@color/white"
+                android:textSize="@dimen/detail_item_text_small"/>
+
+            <TextView
+                android:id="@+id/item_name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_padding_small"
+                android:layout_weight="1.0"
+                android:text="California Pizza pizza pizza"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/detail_item_text_medium"/>
+
+            <TextView
+                android:id="@+id/item_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/item_padding_small"
+                android:gravity="bottom"
+                android:text="$14.99"
+                android:textColor="#801b1b1b"
+                android:textSize="@dimen/detail_item_text_small"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--special_instructions-->
+    <RelativeLayout
+        android:id="@+id/special_instructions_container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/detail_item_option_top_padding"
+        android:paddingRight="@dimen/detail_item_option_top_padding"
+        android:paddingTop="@dimen/detail_item_option_top_padding">
+
+        <TextView
+            android:id="@+id/special_instructions_title_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dd_light_grey"
+            android:fontFamily="@string/roboto_medium"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/special_instruction"
+            android:textAllCaps="true"
+            android:textColor="#ff1a1a1a"
+            android:textSize="@dimen/detail_item_text_extra_small"/>
+
+        <TextView
+            android:id="@+id/special_instructions_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/special_instructions_title_textView"
+            android:layout_below="@id/special_instructions_title_textView"
+            android:background="@color/dd_light_grey"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="Absolutely no cheese!"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/detail_item_text_small"/>
+
+        <View
+            android:layout_width="@dimen/dd_section_border_width"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/special_instructions_textView"
+            android:layout_alignTop="@id/special_instructions_title_textView"
+            android:background="#ff333333"/>
+    </RelativeLayout>
+
+    <!--order_option-->
+        <RelativeLayout
+            android:id="@+id/order_option_container"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/detail_item_option_top_padding"
+            android:paddingRight="@dimen/detail_item_option_top_padding"
+            android:paddingTop="@dimen/detail_item_option_top_padding">
+
+            <TextView
+                android:id="@+id/options_title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@string/roboto_medium"
+                android:text="TOPPING"
+                android:textAllCaps="true"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/detail_item_text_extra_small"/>
+
+            <TextView
+                android:id="@+id/option_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/options_title_textView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:text="Bacon\nMushrooms\nOnions"
+                android:textColor="@color/color_text_grey"
+                android:textSize="@dimen/detail_item_text_small"/>
+
+            <TextView
+                android:id="@+id/option_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/option_textView"
+                android:layout_marginLeft="@dimen/item_padding_small"
+                android:layout_toRightOf="@id/option_textView"
+                android:gravity="center"
+                android:text="$14.99"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/detail_item_text_small"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/option_textView"
+                android:layout_alignTop="@id/options_title_textView"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#ffd3d3d3"/>
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/detail_item_top_padding"
+        android:background="@color/dd_border_grey"/>
+</LinearLayout>

@@ -29,7 +29,7 @@ public class OrderAdapter extends BaseSectionQuickAdapter<OrderSection, BaseView
 
     @Override
     protected void convert(BaseViewHolder helper, OrderSection item) {
-        ButterKnife.bind(this, helper.convertView);
+        ButterKnife.bind(this, helper.getConvertView());
         Order order = item.getOrder();
         mOrderNumberTextView.setText(mContext.getString(R.string.order_number, order.orderNumber()));
         mCustomerNameTextView.setText(order.customerName());

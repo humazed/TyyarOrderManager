@@ -2,10 +2,19 @@
     <string name="app_name">Tyyar Order Manager</string>
     <string name="title_activity_order_details">Order Details</string>
 
-
+    <!--MainActivity start-->
     <string name="order_number">#%d</string>
     <string name="order_items_count">%d Items</string>
     <string name="order_pickup_time">Pickup at %s</string>
+    <!--MainActivity end-->
+
+    <!--OrderDetailsActivity start-->
+    <!--OrderDetailsActivity end-->
+
+    <!--commons start-->
+    <string name="price_in_pound">%.2f EGP</string>
+    <!--commons end-->
+
 
     <string name="in_some_min">%d minutes</string>
     <string name="date_time">%1$s, %2$s</string>
@@ -14,7 +23,6 @@
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="preposition_for_date">on %s</string>
     <string name="preposition_for_time">at %s</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
     <string name="attachment_download_failed_message">Failed to download. Tap to retry.</string>
     <string name="attachment_open_error_message">"Can't open attachment."</string>
     <string name="attachment_upload_access_error_message">Error accessing file</string>
@@ -262,41 +270,6 @@ Call DoorDash (%1$s)"</string>
     <string name="group_order_label">DoorDash Group Orders let multiple people pick items and submit in one order. &lt;b>Please label each set of items with the name of the customer.&lt;/b></string>
     <string name="group_order_reminder">"Group Orders: Please make sure to label each item with customer's name."</string>
     <string name="grow_your_business">Grow your business through delivery</string>
-    <string name="handlingmsg_err_autocutter">"Please remove jammed paper and close roll paper cover.
-Remove any jammed paper or foreign substances in the printer, and then turn the printer off and turn the printer on again.
-"</string>
-    <string name="handlingmsg_err_battery">"Battery of printer is hot.
-"</string>
-    <string name="handlingmsg_err_battery_real_end">"Please connect AC adapter or change the battery.
-Battery of printer is almost empty.
-"</string>
-    <string name="handlingmsg_err_cover_open">"Please close roll paper cover.
-"</string>
-    <string name="handlingmsg_err_head">"Print head of printer is hot.
-"</string>
-    <string name="handlingmsg_err_motor">"Motor Driver IC of printer is hot.
-"</string>
-    <string name="handlingmsg_err_need_recover">"Then, If the printer doesn't recover from error, please cycle the power switch.
-"</string>
-    <string name="handlingmsg_err_no_response">"Please check the connection of the printer and the mobile terminal.
-Connection get lost.
-"</string>
-    <string name="handlingmsg_err_offline">"Printer is offline.
-"</string>
-    <string name="handlingmsg_err_overheat">"Please wait until error LED of the printer turns off.
-"</string>
-    <string name="handlingmsg_err_paper_feed">"Please release a paper feed switch.
-"</string>
-    <string name="handlingmsg_err_receipt_end">"Please check roll paper.
-"</string>
-    <string name="handlingmsg_err_unrecover">"Please cycle the power switch of the printer.
-If same errors occurred even power cycled, the printer may out of order."</string>
-    <string name="handlingmsg_err_wrong_paper">"Please set correct roll paper.
-"</string>
-    <string name="handlingmsg_warn_battery_near_end">"Battery level of printer is low.
-"</string>
-    <string name="handlingmsg_warn_receipt_near_end">"Roll paper is nearly end.
-"</string>
     <string name="in_progress">In Progress</string>
     <string name="inactive">inactive</string>
     <string name="inactive_forever">until reactivated manually</string>
@@ -346,7 +319,6 @@ If same errors occurred even power cycled, the printer may out of order."</strin
     <string name="no_order_now">No orders yet, get ready...</string>
     <string name="no_printer_found">No printer found yet.</string>
     <string name="notify_dasher">Notify dasher</string>
-    <string name="ok">ok</string>
     <string name="open_drawer">Open drawer</string>
     <string name="option_out_of_stock">Option Is Out Of Stock</string>
     <string name="optional">Optional</string>

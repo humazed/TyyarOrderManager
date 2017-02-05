@@ -8,38 +8,50 @@
     android:orientation="vertical"
     tools:context="com.tyyar.tyyarordermanager.activities.OrderDetailsActivity">
 
-    <include
-        layout="@layout/item_expandable_menu_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:id="@id/menu_item_view"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/screen_margin"
-        android:background="@android:color/transparent"
-        android:orientation="vertical"/>
 
     <include
-        layout="@layout/item_expandable_menu_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:id="@id/menu_item_view"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/screen_margin"
-        android:background="@android:color/transparent"
-        android:orientation="vertical"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_order_details"/>
 
     <include
-        layout="@layout/item_expandable_menu_item"
-        android:layout_width="wrap_content"
+        layout="@layout/row_order_details"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:id="@id/menu_item_view"
-        android:layout_width="fill_parent"
-        android:layout_height="120dp"
-        android:orientation="vertical"/>
 </LinearLayout>
