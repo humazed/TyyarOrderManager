@@ -15,8 +15,8 @@ import android.widget.TextView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.tyyar.tyyarordermanager.R;
-import com.tyyar.tyyarordermanager.SetPrepTimeDialogFragment;
 import com.tyyar.tyyarordermanager.adapters.OrderDetailsAdapter;
+import com.tyyar.tyyarordermanager.fragments.SetPrepTimeDialogFragment;
 import com.tyyar.tyyarordermanager.model.Order;
 
 import butterknife.BindView;
@@ -44,10 +44,10 @@ public class OrderDetailsActivity extends AppCompatActivity {
 
         Order order = getIntent().getParcelableExtra(MainActivity.KEY_ORDER);
 
-        mOrderNumberCustomerNameTextView.setText(String.format(getString(R.string.order_number_customer_name)
-                , order.orderNumber(), order.customerName()));
-        mItemsCountPickupTimeTextView.setText(String.format(getString(R.string.items_count_pickup_time)
-                , order.items().size(), order.pickUpTime()));
+        mOrderNumberCustomerNameTextView.setText(getString(R.string.order_number_customer_name,
+                order.orderNumber(), order.customerName()));
+        mItemsCountPickupTimeTextView.setText(getString(R.string.items_count_pickup_time,
+                order.items().size(), order.pickUpTime()));
 
         mItemsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mItemsRecyclerView.setAdapter(new OrderDetailsAdapter(order.items()));

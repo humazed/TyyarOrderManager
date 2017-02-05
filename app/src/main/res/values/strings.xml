@@ -13,13 +13,18 @@
     <string name="items_count_pickup_time">%1$d Items • Pickup at %2$s \t</string>
     <!--OrderDetailsActivity end-->
 
+    <!--SetPrepTimeDialogFragment start-->
+    <string name="min_count">%d minutes</string>
+    <string name="min_count_initial">5 minutes</string>
+    <string name="time_date">%1$s, %2$s</string>
+    <!--SetPrepTimeDialogFragment end-->
+
     <!--commons start-->
     <string name="price_in_pound">%.2f EGP</string>
     <!--commons end-->
 
 
-    <string name="in_some_min">%d minutes</string>
-    <string name="date_time">%1$s, %2$s</string>
+
     <string name="relative_time">%1$s, %2$s</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
