@@ -1,6 +1,6 @@
 package com.tyyar.tyyarordermanager.utils;
 
-import com.tyyar.tyyarordermanager.adapters.OrderSection;
+import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
 import com.tyyar.tyyarordermanager.model.Order;
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class DataUtils {
 
-    public static List<OrderSection> getSectionsList(List<Order> orders) {
+    public static List<OrderAdapter.OrderSection> getSectionsList(List<Order> orders) {
         ArrayList<Order> newO = new ArrayList<>();
         ArrayList<Order> inProg = new ArrayList<>();
         ArrayList<Order> comp = new ArrayList<>();
@@ -32,13 +32,13 @@ public class DataUtils {
             }
         }
 
-        return new ArrayList<OrderSection>() {{
-            add(new OrderSection(true, "NEW", newO.size()));
-            for (Order order : newO) add(new OrderSection(order));
-            add(new OrderSection(true, "IN_PROGRESS", inProg.size()));
-            for (Order order : inProg) add(new OrderSection(order));
-            add(new OrderSection(true, "COMPLECTED", comp.size()));
-            for (Order order : comp) add(new OrderSection(order));
+        return new ArrayList<OrderAdapter.OrderSection>() {{
+            add(new OrderAdapter.OrderSection(true, "NEW", newO.size()));
+            for (Order order : newO) add(new OrderAdapter.OrderSection(order));
+            add(new OrderAdapter.OrderSection(true, "IN_PROGRESS", inProg.size()));
+            for (Order order : inProg) add(new OrderAdapter.OrderSection(order));
+            add(new OrderAdapter.OrderSection(true, "COMPLECTED", comp.size()));
+            for (Order order : comp) add(new OrderAdapter.OrderSection(order));
         }};
     }
 

@@ -13,7 +13,6 @@ import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.tyyar.tyyarordermanager.R;
 import com.tyyar.tyyarordermanager.adapters.DataServer;
 import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
-import com.tyyar.tyyarordermanager.adapters.OrderSection;
 import com.tyyar.tyyarordermanager.model.Order;
 import com.tyyar.tyyarordermanager.utils.DataUtils;
 import com.tyyar.tyyarordermanager.utils.UiUtils;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Order> orders = DataServer.getOrders();
 
         mOrdersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<OrderSection> sectionsList = DataUtils.getSectionsList(orders);
+        List<OrderAdapter.OrderSection> sectionsList = DataUtils.getSectionsList(orders);
         OrderAdapter adapter = new OrderAdapter(sectionsList);
         mOrdersRecyclerView.setAdapter(adapter);
 

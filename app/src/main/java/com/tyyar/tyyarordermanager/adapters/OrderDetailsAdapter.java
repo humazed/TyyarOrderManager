@@ -45,9 +45,6 @@ public class OrderDetailsAdapter extends BaseQuickAdapter<OrderItem, BaseViewHol
         mItemPriceTextView.setText(mContext.getString(R.string.price_in_pound, item.price()));
         mSpecialInstructionsTextView.setText(item.specialInstructions());
 
-
         viewHolder.setText(R.id.item_name_textView, item.category());
-//                .addOnClickListener(R.id.sub_textView_1)
-//                .addOnClickListener(R.id.sub_textView_2);
     }
 }

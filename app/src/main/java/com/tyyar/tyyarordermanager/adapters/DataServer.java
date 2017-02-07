@@ -17,7 +17,7 @@ import static com.tyyar.tyyarordermanager.model.OrderStatus.NEW;
  */
 public class DataServer {
 
-    public static List<OrderSection> getSampleWithSection() {
+    public static List<OrderAdapter.OrderSection> getSampleWithSection() {
         ArrayList<Order> list = getOrders();
         return DataUtils.getSectionsList(list);
     }
