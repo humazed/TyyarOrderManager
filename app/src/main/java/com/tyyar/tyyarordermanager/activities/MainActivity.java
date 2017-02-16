@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Order> orders = DataServer.getOrders();
 
         mOrdersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<OrderAdapter.OrderSection> sectionsList = DataUtils.getSectionsList(orders);
+        List<OrderAdapter.OrderSection> sectionsList = DataUtils.getOrdersSectionedList(orders);
         OrderAdapter adapter = new OrderAdapter(sectionsList);
         mOrdersRecyclerView.setAdapter(adapter);
 

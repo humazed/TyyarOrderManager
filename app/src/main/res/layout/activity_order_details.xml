@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:paddingLeft="40dp"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 tools:text="line 1"/>
 
@@ -39,8 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_marginBottom="20dp"
-                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:drawableRight="@drawable/ic_edit_white_24dp"
                 android:paddingLeft="40dp"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 tools:text="line 2"/>
         </LinearLayout>

@@ -19,7 +19,7 @@ public class DataServer {
 
     public static List<OrderAdapter.OrderSection> getSampleWithSection() {
         ArrayList<Order> list = getOrders();
-        return DataUtils.getSectionsList(list);
+        return DataUtils.getOrdersSectionedList(list);
     }
 
     public static ArrayList<Order> getOrders() {

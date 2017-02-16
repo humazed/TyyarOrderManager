@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorAccent">#fff44336</color>
+    <color name="colorPrimary">#ff333333</color>
+    <color name="colorPrimaryDark">#ff1a1a1a</color>
+    <color name="colorText">#ff000000</color>
+    <color name="colorTextLight">#ff767676</color>
+    <color name="colorTextPending">#ff49b881</color>
+    <color name="colorTextWarning">#ffef4e42</color>
+    <color name="color_text_dark">#ff1b1b1b</color>
+    <color name="color_text_dark_red">#ff62100a</color>
+    <color name="color_text_grey">#ff797979</color>
+    <color name="color_text_red">#ffe44e42</color>
+    <color name="color_text_white">#ffffffff</color>
 
     <color name="order_card_green">#fff0ffe8</color>
 
@@ -19,15 +29,6 @@
     <color name="black">#ff000000</color>
     <color name="black_overlay">#66000000</color>
     <color name="blue">#ff4a90e2</color>
-    <color name="colorText">#ff000000</color>
-    <color name="colorTextLight">#ff767676</color>
-    <color name="colorTextPending">#ff49b881</color>
-    <color name="colorTextWarning">#ffef4e42</color>
-    <color name="color_text_dark">#ff1b1b1b</color>
-    <color name="color_text_dark_red">#ff62100a</color>
-    <color name="color_text_grey">#ff797979</color>
-    <color name="color_text_red">#ffe44e42</color>
-    <color name="color_text_white">#ffffffff</color>
     <color name="dd_black">#ff1b1b1b</color>
     <color name="dd_border_grey">#ffd6d8de</color>
     <color name="dd_green">#ff6acb38</color>
