@@ -16,6 +16,7 @@
         android:layout_width="@dimen/delivery_list_item_badge_width"
         android:layout_height="@dimen/delivery_list_item_badge_height"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="@dimen/delivery_list__item_new_marging"
         android:layout_marginRight="@dimen/delivery_list__item_new_marging"
@@ -29,9 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/new_order_button"
+        android:layout_toStartOf="@+id/new_order_button"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/delivery_list_padding_left">
+        android:paddingLeft="@dimen/delivery_list_padding_left"
+        android:paddingStart="@dimen/delivery_list_padding_left">
 
         <LinearLayout
             android:layout_width="match_parent"
