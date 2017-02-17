@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/button_white"
+    android:orientation="vertical"
+    tools:context="com.tyyar.tyyarordermanager.fragments.EditItemDialogFragment">
+
+    <TextView
+        android:id="@+id/category_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        tools:text="pizza"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            tools:text="Cheese Pizza"/>
+
+        <TextView
+            android:id="@+id/price_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            tools:text="$12.00"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"/>
+
+
+    <TextView
+        android:id="@+id/out_of_stock_textView"
+        style="@style/edit_item_row"
+        android:drawableLeft="@drawable/ic_remove_shopping_cart_black_24dp"
+        android:text="\t\t Out of stock"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"/>
+
+
+    <TextView
+        android:id="@+id/contact_adjust_textView"
+        style="@style/edit_item_row"
+        android:drawableLeft="@drawable/ic_adjust_order_black_24dp"
+        android:text="\t\t Contact customer to adjust "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"/>
+
+
+    <TextView
+        android:id="@+id/additional_charges_textView"
+        style="@style/edit_item_row"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:text="\t\t Add additional charges"/>
+
+
+</LinearLayout>

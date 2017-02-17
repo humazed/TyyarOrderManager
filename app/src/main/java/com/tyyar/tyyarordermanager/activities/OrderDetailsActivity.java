@@ -14,8 +14,10 @@ import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.chad.library.adapter.base.listener.OnItemLongClickListener;
 import com.tyyar.tyyarordermanager.R;
 import com.tyyar.tyyarordermanager.adapters.OrderDetailsAdapter;
+import com.tyyar.tyyarordermanager.fragments.EditItemDialogFragment;
 import com.tyyar.tyyarordermanager.fragments.SetPrepTimeDialogFragment;
 import com.tyyar.tyyarordermanager.model.Order;
 
@@ -58,12 +60,19 @@ public class OrderDetailsActivity extends AppCompatActivity {
             }
         });
 
+        mItemsRecyclerView.addOnItemTouchListener(new OnItemLongClickListener() {
+            @Override
+            public void onSimpleItemLongClick(BaseQuickAdapter adapter, View view, int position) {
+                showEditItemDialog();
+            }
+        });
 
-        mAcceptOrderButton.setOnClickListener(v -> showDialog());
+
+        mAcceptOrderButton.setOnClickListener(v -> showPrepTimeDialog());
 
     }
 
-    void showDialog() {
+    void showPrepTimeDialog() {
 
         // DialogFragment.show() will take care of adding the fragment
         // in a transaction.  We also want to remove any currently showing
@@ -79,5 +88,22 @@ public class OrderDetailsActivity extends AppCompatActivity {
         // Create and show the dialog.
         DialogFragment newFragment = SetPrepTimeDialogFragment.newInstance(1);
         newFragment.show(getSupportFragmentManager(), "dialog");
+    }
+    void showEditItemDialog() {
+
+        // DialogFragment.show() will take care of adding the fragment
+        // in a transaction.  We also want to remove any currently showing
+        // dialog, so make our own transaction and take care of that here.
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("dialog2");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        ft.commit();
+
+        // Create and show the dialog.
+        DialogFragment newFragment = EditItemDialogFragment.newInstance("1");
+        newFragment.show(getSupportFragmentManager(), "dialog2");
     }
 }
