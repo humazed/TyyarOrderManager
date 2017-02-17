@@ -1,5 +1,6 @@
-package com.tyyar.tyyarordermanager.adapters;
+package com.tyyar.tyyarordermanager;
 
+import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
 import com.tyyar.tyyarordermanager.model.Order;
 import com.tyyar.tyyarordermanager.model.OrderItem;
 import com.tyyar.tyyarordermanager.utils.DataUtils;

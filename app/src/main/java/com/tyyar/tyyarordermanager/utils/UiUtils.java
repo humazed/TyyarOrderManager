@@ -35,18 +35,18 @@ public class UiUtils {
                 .withOnAccountHeaderListener((view, profile, currentProfile) -> false)
                 .build();
 
-        Drawer result = new DrawerBuilder()
+        return new DrawerBuilder()
                 .withActivity(activity)
                 .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withIdentifier(1).withName("Home").withIcon(GoogleMaterial.Icon.gmd_home),
-                        new PrimaryDrawerItem().withIdentifier(2).withName("Donate").withIcon(GoogleMaterial.Icon.gmd_sentiment_very_satisfied),
-                        new PrimaryDrawerItem().withIdentifier(3).withName("Search for donner").withIcon(GoogleMaterial.Icon.gmd_search)
+                        new PrimaryDrawerItem().withIdentifier(1).withName(activity.getString(R.string.active_orders)).withIcon(GoogleMaterial.Icon.gmd_home),
+                        new PrimaryDrawerItem().withIdentifier(2).withName(activity.getString(R.string.order_history)).withIcon(GoogleMaterial.Icon.gmd_history),
+                        new PrimaryDrawerItem().withIdentifier(3).withName(activity.getString(R.string.manage_menu)).withIcon(GoogleMaterial.Icon.gmd_restaurant_menu)
                 )
                 .addStickyDrawerItems(
                         new PrimaryDrawerItem().withIdentifier(4).withName("Settings").withIcon(GoogleMaterial.Icon.gmd_settings),
-                        new PrimaryDrawerItem().withIdentifier(5).withName("Help").withIcon(GoogleMaterial.Icon.gmd_help_outline),
+                        new PrimaryDrawerItem().withIdentifier(5).withName(activity.getString(R.string.help_and_support)).withIcon(GoogleMaterial.Icon.gmd_help_outline),
                         new PrimaryDrawerItem().withIdentifier(6).withName("About").withIcon(GoogleMaterial.Icon.gmd_info_outline))
                 .withOnDrawerItemClickListener((view, position, drawerItem) -> {
                     Log.d(TAG, "showDrawer " + drawerItem.getIdentifier());
@@ -78,7 +78,6 @@ public class UiUtils {
 //                    }
                     return false;
                 }).build();
-        return result;
     }
 
 }

@@ -23,6 +23,12 @@
     <string name="price_in_pound">%.2f EGP</string>
     <!--commons end-->
 
+    <!--NavigationDrawer start-->
+    <string name="active_orders">Active Orders</string>
+    <string name="order_history">Order History</string>
+    <string name="manage_menu">Manage Menu</string>
+    <string name="help_and_support">Help &amp; Support</string>
+    <!--NavigationDrawer end-->
 
 
     <string name="relative_time">%1$s, %2$s</string>
@@ -125,7 +131,6 @@
     <string name="accept_order">Accept Order</string>
     <string name="action_sign_in">Sign In</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="active_orders">Active Orders</string>
     <string name="add_additional_charge">Add Additional Charge</string>
     <string name="add_charge">add charge</string>
     <string name="added_to_some_items">added to %d items</string>
@@ -265,7 +270,6 @@ Call DoorDash (%1$s)"</string>
     <string name="file_provider_authority">com.zopim.android.sdk.fileprovider</string>
     <string name="firebase_database_url">https://merchant-order-manager-9ad69.firebaseio.com</string>
     <string name="gcm_defaultSenderId">1050396094829</string>
-    <string name="get_help">Help &amp; Support</string>
     <string name="go_back">go back</string>
     <string name="google_api_key">AIzaSyCVT-6JDF9aDzxYOGCwgZo5-lv2xorp7nE</string>
     <string name="google_app_id">1:1050396094829:android:25342e389c823983</string>
@@ -304,7 +308,6 @@ Call DoorDash (%1$s)"</string>
     <string name="let_customer_know_you_prepare">"Let the customer know you'll prepare this"</string>
     <string name="logout">Logout</string>
     <string name="make_sure_replacement_appropriate">Make sure replacement is appropriate</string>
-    <string name="manage_menu">Manage Menu</string>
     <string name="mark_as_active">Mark as active</string>
     <string name="mark_item_deactived" formatted="false">Please Note: \"%s\" required a %s to be available to customer. To continue, please note that the following item that offer these options will be automatically deactivated as well.</string>
     <string name="mark_item_deactived_red">"&lt;font color='red'>minimum of %d options&lt;/font>"</string>
@@ -333,7 +336,6 @@ Call DoorDash (%1$s)"</string>
     <string name="options_c">Options</string>
     <string name="options_in_items">• Added to %s items</string>
     <string name="order">Order</string>
-    <string name="order_history">Order History</string>
     <string name="order_manager">Order Manager</string>
     <string name="order_not_print">Order did not print</string>
     <string name="order_ready_in">should be ready in %s min</string>

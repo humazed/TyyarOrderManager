@@ -11,7 +11,7 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.tyyar.tyyarordermanager.R;
-import com.tyyar.tyyarordermanager.adapters.DataServer;
+import com.tyyar.tyyarordermanager.DataServer;
 import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
 import com.tyyar.tyyarordermanager.model.Order;
 import com.tyyar.tyyarordermanager.utils.DataUtils;
@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, OrderDetailsActivity.class);
                 intent.putExtra(KEY_ORDER, orders.get(position));
                 startActivity(intent);
-
             }
         });
 
