@@ -25,27 +25,20 @@ public class DataServer {
 
     public static ArrayList<Order> getOrders() {
         ArrayList<OrderItem> items = new ArrayList<OrderItem>() {{
-            add(OrderItem.create(2, "sides", "1/4 standawidsh", "pleas no tomato", 5.50));
-            add(OrderItem.create(2, "sides", "1/4 standawidsh", "pleas no tomato", 5.50));
-            add(OrderItem.create(2, "sides", "1/4 standawidsh", "pleas no tomato", 5.50));
+            add(OrderItem.create(2, "main dishes", "Neapolitan Pizza", "pleas no tomato", 10.00));
+//            add(OrderItem.create(2, "sides", "1/4 standawidsh", "pleas no tomato", 5.50));
+//            add(OrderItem.create(2, "sides", "1/4 standawidsh", "pleas no tomato", 5.50));
         }};
 
         return new ArrayList<Order>() {{
-            add(Order.create(1001, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1002, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1003, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1004, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1005, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1006, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1007, "lallala", "12.30", "mohammed", COMPLECTED, items));
-            add(Order.create(1008, "lallala", "12.30", "mohammed", COMPLECTED, items));
-            add(Order.create(1009, "lallala", "12.30", "mohammed", IN_PROGRESS, items));
-            add(Order.create(1010, "lallala", "12.30", "mohammed", IN_PROGRESS, items));
-            add(Order.create(1011, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1012, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1013, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1014, "lallala", "12.30", "mohammed", NEW, items));
-            add(Order.create(1015, "lallala", "12.30", "mohammed", NEW, items));
+            add(Order.create(1001, "Neapolitan Pizza", "12.30", "Mohammed H.", NEW, items));
+            add(Order.create(1002, "Chicago Pizza", "12.30", "mohammed", COMPLECTED, items));
+            add(Order.create(1003, "Sicilian Pizza", "12.30", "mohammed", COMPLECTED, items));
+            add(Order.create(1004, "Pizza", "12.30", "mohammed", IN_PROGRESS, items));
+            add(Order.create(1007, "Greek Pizza", "12.30", "mohammed", COMPLECTED, items));
+            add(Order.create(1008, "Sicilian Pizza", "12.30", "mohammed", COMPLECTED, items));
+            add(Order.create(1009, "Pizza", "12.30", "mohammed", IN_PROGRESS, items));
+            add(Order.create(1010, "Pizza", "12.30", "mohammed", IN_PROGRESS, items));
         }};
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tyyar Order Manager</string>
+    <string name="app_name">Tyyar Merchant</string>
     <string name="title_activity_order_details">Order Details</string>
 
     <!--MainActivity start-->
@@ -9,8 +9,8 @@
     <!--MainActivity end-->
 
     <!--OrderDetailsActivity start-->
-    <string name="order_number_customer_name">#%1$d    %2$s</string>
-    <string name="items_count_pickup_time">%1$d Items • Pickup at %2$s \t</string>
+    <string name="order_number_customer_name">#%1$d \t•\t %2$s</string>
+    <string name="items_count_pickup_time">%1$d Items \t•\t Pickup at %2$s \t</string>
     <!--OrderDetailsActivity end-->
 
     <!--SetPrepTimeDialogFragment start-->
@@ -197,7 +197,7 @@
     <string name="deactivate_options">Deactivate Options</string>
     <string name="deactivate_some">Deactivate %s</string>
     <string name="deactivated">Deactivated</string>
-    <string name="default_web_client_id">1050396094829-1tuetm29brh2armgdda2i8ovf2stqnmk.apps.googleusercontent.com</string>
+    <!--<string name="default_web_client_id">338778730383-hoaplmfv3neoab468u56vcrc3ru7delh.apps.googleusercontent.com</string>-->
     <string name="deliveried">Deliveried</string>
     <string name="delivery_actual_pickup_string">Picked up at %1$s</string>
     <string name="delivery_confirm">Confirm</string>
@@ -267,15 +267,7 @@ Call DoorDash (%1$s)"</string>
     <string name="failed_to_cancel_order">Failed to cancel the order, please try again later.</string>
     <string name="failed_to_get_profile">"Can't find your merchant account!"</string>
     <string name="feedback">Feedback</string>
-    <string name="file_provider_authority">com.zopim.android.sdk.fileprovider</string>
-    <string name="firebase_database_url">https://merchant-order-manager-9ad69.firebaseio.com</string>
-    <string name="gcm_defaultSenderId">1050396094829</string>
     <string name="go_back">go back</string>
-    <string name="google_api_key">AIzaSyCVT-6JDF9aDzxYOGCwgZo5-lv2xorp7nE</string>
-    <string name="google_app_id">1:1050396094829:android:25342e389c823983</string>
-    <string name="google_crash_reporting_api_key">AIzaSyCVT-6JDF9aDzxYOGCwgZo5-lv2xorp7nE</string>
-    <string name="google_map_api_key">AIzaSyClzZsaLDBwCtwJ4Trjh9BTu2KNo4CPuqE</string>
-    <string name="google_storage_bucket">merchant-order-manager-9ad69.appspot.com</string>
     <string name="got_it">Got it</string>
     <string name="group_order">Group Order!</string>
     <string name="group_order_label">DoorDash Group Orders let multiple people pick items and submit in one order. &lt;b>Please label each set of items with the name of the customer.&lt;/b></string>
@@ -427,9 +419,6 @@ Call DoorDash (%1$s)"</string>
     <string name="title_delivery_detail">Delivery Detail</string>
     <string name="title_delivery_list">Active Orders</string>
     <string name="to_replace_someone">"Replacing %s's"</string>
-    <string name="today">Today</string>
-    <string name="tomorrow">tomorrow</string>
-    <string name="tomorrow_c">Tomorrow</string>
     <string name="too_many_options">You have selected too many extras!</string>
     <string name="total">Total:</string>
     <string name="total_word">total</string>

@@ -16,7 +16,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:textSize="18sp"
-        tools:text="pizza"/>
+        tools:text="pizza"
+        android:text="pizza"/>
 
 
     <LinearLayout
@@ -33,7 +34,8 @@
             android:layout_weight="1"
             android:textSize="24sp"
             android:textStyle="normal|bold"
-            tools:text="Cheese Pizza"/>
+            tools:text="Cheese Pizza"
+            android:text="Cheese Pizza"/>
 
         <TextView
             android:id="@+id/price_textView"
@@ -41,7 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:textSize="18sp"
-            tools:text="$12.00"/>
+            tools:text="$12.00"
+            android:text="$12.00"/>
 
     </LinearLayout>
 

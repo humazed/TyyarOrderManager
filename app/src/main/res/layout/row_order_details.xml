@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@string/roboto_medium"
-                android:text="TOPPING"
+                android:text="ADDITIONS"
                 android:textAllCaps="true"
                 android:textColor="@color/color_text_dark"
                 android:textSize="@dimen/detail_item_text_extra_small"/>
@@ -143,7 +143,7 @@
                 android:layout_below="@id/options_title_textView"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="6dp"
-                android:text="Bacon\nMushrooms\nOnions"
+                android:text="Salads\nPickles"
                 android:textColor="@color/color_text_grey"
                 android:textSize="@dimen/detail_item_text_small"/>
 

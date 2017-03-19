@@ -47,7 +47,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         Order order = getIntent().getParcelableExtra(MainActivity.KEY_ORDER);
 
         mOrderNumberCustomerNameTextView.setText(getString(R.string.order_number_customer_name,
-                order.orderNumber(), order.customerName()));
+                order.orderNumber(), order.driverName()));
         mItemsCountPickupTimeTextView.setText(getString(R.string.items_count_pickup_time,
                 order.items().size(), order.pickUpTime()));
 
@@ -89,6 +89,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         DialogFragment newFragment = SetPrepTimeDialogFragment.newInstance(1);
         newFragment.show(getSupportFragmentManager(), "dialog");
     }
+
     void showEditItemDialog() {
 
         // DialogFragment.show() will take care of adding the fragment
