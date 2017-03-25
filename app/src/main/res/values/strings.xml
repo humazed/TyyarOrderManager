@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tyyar Merchant</string>
+    <string name="app_name">Tyyar Order Manager</string>
     <string name="title_activity_order_details">Order Details</string>
 
     <!--MainActivity start-->
@@ -29,6 +29,10 @@
     <string name="manage_menu">Manage Menu</string>
     <string name="help_and_support">Help &amp; Support</string>
     <!--NavigationDrawer end-->
+
+    <!--LoginActivity start-->
+    <string name="learn_about_tyyar">Learn about Tyyar</string>
+    <!--LoginActivity end-->
 
 
     <string name="relative_time">%1$s, %2$s</string>

@@ -19,9 +19,9 @@ import com.tyyar.tyyarordermanager.DataServer;
 import com.tyyar.tyyarordermanager.MyHandler;
 import com.tyyar.tyyarordermanager.NotificationSettings;
 import com.tyyar.tyyarordermanager.R;
-import com.tyyar.tyyarordermanager.notification.RegistrationIntentService;
 import com.tyyar.tyyarordermanager.adapters.OrderAdapter;
 import com.tyyar.tyyarordermanager.model.Order;
+import com.tyyar.tyyarordermanager.notification.RegistrationIntentService;
 import com.tyyar.tyyarordermanager.utils.DataUtils;
 import com.tyyar.tyyarordermanager.utils.UiUtils;
 
@@ -30,6 +30,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.tyyar.tyyarordermanager.activities.LoginActivity.KEY_FROM_LOGIN;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -50,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         UiUtils.showDrawer(this, mToolbar).setSelection(1, false);
         setupNotification();
+
+        // TODO: 3/25/2017 replace it with check if there is a loged in user
+        if (!getIntent().getBooleanExtra(KEY_FROM_LOGIN, false)) {
+            startActivity(new Intent(this, LoginActivity.class));
+        }
 
         ArrayList<Order> orders = DataServer.getOrders();
 
